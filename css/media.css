@@ -1,0 +1,66 @@
+@media (max-width: 1330px){
+    .app-content{
+        height: 100%;
+        align-items: center;
+    }
+    .credit-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media(max-width: 1172px) {
+    .course{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+    }
+    .header-content{
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media(max-width: 972px) {
+    .best{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .best-content p{
+        justify-content: center;
+    }
+    .header-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        min-height: 100vh;
+        width: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.493);
+        align-items: center;
+        justify-content: center;
+        transition: 500ms;
+    }
+    .header-nav-list__link{
+        color: white;
+        font-size: 25px; 
+    }
+    .burger{
+        display: block;
+        visibility: visible;
+        width: 5%;
+        position: absolute;
+        right: 2%;
+        z-index: 2;
+    }
+    .burger img{
+        width: 100%;
+    }
+    .burger:hover ~ .header-nav-list{
+        top: 0;
+    }
+}
